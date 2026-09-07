@@ -1,0 +1,3 @@
+/Users/prakashkumar/Desktop/git/build/CMakeFiles/minigit.dir
+/Users/prakashkumar/Desktop/git/build/CMakeFiles/edit_cache.dir
+/Users/prakashkumar/Desktop/git/build/CMakeFiles/rebuild_cache.dir
