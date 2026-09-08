@@ -7,4 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(minigit
     src/main.cpp
+    src/Repository.cpp
+    src/ObjectStore.cpp
+    src/Staging.cpp
 )

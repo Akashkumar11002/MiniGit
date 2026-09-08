@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/git
+CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/MiniGit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/git/build
+CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/MiniGit/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minigit.dir/depend.make
@@ -73,30 +73,78 @@ CMakeFiles/minigit.dir/codegen:
 .PHONY : CMakeFiles/minigit.dir/codegen
 
 CMakeFiles/minigit.dir/src/main.cpp.o: CMakeFiles/minigit.dir/flags.make
-CMakeFiles/minigit.dir/src/main.cpp.o: /Users/prakashkumar/Desktop/git/src/main.cpp
+CMakeFiles/minigit.dir/src/main.cpp.o: /Users/prakashkumar/Desktop/MiniGit/src/main.cpp
 CMakeFiles/minigit.dir/src/main.cpp.o: CMakeFiles/minigit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prakashkumar/Desktop/git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minigit.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigit.dir/src/main.cpp.o -MF CMakeFiles/minigit.dir/src/main.cpp.o.d -o CMakeFiles/minigit.dir/src/main.cpp.o -c /Users/prakashkumar/Desktop/git/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minigit.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigit.dir/src/main.cpp.o -MF CMakeFiles/minigit.dir/src/main.cpp.o.d -o CMakeFiles/minigit.dir/src/main.cpp.o -c /Users/prakashkumar/Desktop/MiniGit/src/main.cpp
 
 CMakeFiles/minigit.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigit.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prakashkumar/Desktop/git/src/main.cpp > CMakeFiles/minigit.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prakashkumar/Desktop/MiniGit/src/main.cpp > CMakeFiles/minigit.dir/src/main.cpp.i
 
 CMakeFiles/minigit.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigit.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prakashkumar/Desktop/git/src/main.cpp -o CMakeFiles/minigit.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prakashkumar/Desktop/MiniGit/src/main.cpp -o CMakeFiles/minigit.dir/src/main.cpp.s
+
+CMakeFiles/minigit.dir/src/Repository.cpp.o: CMakeFiles/minigit.dir/flags.make
+CMakeFiles/minigit.dir/src/Repository.cpp.o: /Users/prakashkumar/Desktop/MiniGit/src/Repository.cpp
+CMakeFiles/minigit.dir/src/Repository.cpp.o: CMakeFiles/minigit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minigit.dir/src/Repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigit.dir/src/Repository.cpp.o -MF CMakeFiles/minigit.dir/src/Repository.cpp.o.d -o CMakeFiles/minigit.dir/src/Repository.cpp.o -c /Users/prakashkumar/Desktop/MiniGit/src/Repository.cpp
+
+CMakeFiles/minigit.dir/src/Repository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigit.dir/src/Repository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prakashkumar/Desktop/MiniGit/src/Repository.cpp > CMakeFiles/minigit.dir/src/Repository.cpp.i
+
+CMakeFiles/minigit.dir/src/Repository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigit.dir/src/Repository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prakashkumar/Desktop/MiniGit/src/Repository.cpp -o CMakeFiles/minigit.dir/src/Repository.cpp.s
+
+CMakeFiles/minigit.dir/src/ObjectStore.cpp.o: CMakeFiles/minigit.dir/flags.make
+CMakeFiles/minigit.dir/src/ObjectStore.cpp.o: /Users/prakashkumar/Desktop/MiniGit/src/ObjectStore.cpp
+CMakeFiles/minigit.dir/src/ObjectStore.cpp.o: CMakeFiles/minigit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minigit.dir/src/ObjectStore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigit.dir/src/ObjectStore.cpp.o -MF CMakeFiles/minigit.dir/src/ObjectStore.cpp.o.d -o CMakeFiles/minigit.dir/src/ObjectStore.cpp.o -c /Users/prakashkumar/Desktop/MiniGit/src/ObjectStore.cpp
+
+CMakeFiles/minigit.dir/src/ObjectStore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigit.dir/src/ObjectStore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prakashkumar/Desktop/MiniGit/src/ObjectStore.cpp > CMakeFiles/minigit.dir/src/ObjectStore.cpp.i
+
+CMakeFiles/minigit.dir/src/ObjectStore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigit.dir/src/ObjectStore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prakashkumar/Desktop/MiniGit/src/ObjectStore.cpp -o CMakeFiles/minigit.dir/src/ObjectStore.cpp.s
+
+CMakeFiles/minigit.dir/src/Staging.cpp.o: CMakeFiles/minigit.dir/flags.make
+CMakeFiles/minigit.dir/src/Staging.cpp.o: /Users/prakashkumar/Desktop/MiniGit/src/Staging.cpp
+CMakeFiles/minigit.dir/src/Staging.cpp.o: CMakeFiles/minigit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minigit.dir/src/Staging.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigit.dir/src/Staging.cpp.o -MF CMakeFiles/minigit.dir/src/Staging.cpp.o.d -o CMakeFiles/minigit.dir/src/Staging.cpp.o -c /Users/prakashkumar/Desktop/MiniGit/src/Staging.cpp
+
+CMakeFiles/minigit.dir/src/Staging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigit.dir/src/Staging.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prakashkumar/Desktop/MiniGit/src/Staging.cpp > CMakeFiles/minigit.dir/src/Staging.cpp.i
+
+CMakeFiles/minigit.dir/src/Staging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigit.dir/src/Staging.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prakashkumar/Desktop/MiniGit/src/Staging.cpp -o CMakeFiles/minigit.dir/src/Staging.cpp.s
 
 # Object files for target minigit
 minigit_OBJECTS = \
-"CMakeFiles/minigit.dir/src/main.cpp.o"
+"CMakeFiles/minigit.dir/src/main.cpp.o" \
+"CMakeFiles/minigit.dir/src/Repository.cpp.o" \
+"CMakeFiles/minigit.dir/src/ObjectStore.cpp.o" \
+"CMakeFiles/minigit.dir/src/Staging.cpp.o"
 
 # External object files for target minigit
 minigit_EXTERNAL_OBJECTS =
 
 minigit: CMakeFiles/minigit.dir/src/main.cpp.o
+minigit: CMakeFiles/minigit.dir/src/Repository.cpp.o
+minigit: CMakeFiles/minigit.dir/src/ObjectStore.cpp.o
+minigit: CMakeFiles/minigit.dir/src/Staging.cpp.o
 minigit: CMakeFiles/minigit.dir/build.make
 minigit: CMakeFiles/minigit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/prakashkumar/Desktop/git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable minigit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable minigit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minigit.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +156,6 @@ CMakeFiles/minigit.dir/clean:
 .PHONY : CMakeFiles/minigit.dir/clean
 
 CMakeFiles/minigit.dir/depend:
-	cd /Users/prakashkumar/Desktop/git/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/prakashkumar/Desktop/git /Users/prakashkumar/Desktop/git /Users/prakashkumar/Desktop/git/build /Users/prakashkumar/Desktop/git/build /Users/prakashkumar/Desktop/git/build/CMakeFiles/minigit.dir/DependInfo.cmake "--color=$(COLOR)" minigit
+	cd /Users/prakashkumar/Desktop/MiniGit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/prakashkumar/Desktop/MiniGit /Users/prakashkumar/Desktop/MiniGit /Users/prakashkumar/Desktop/MiniGit/build /Users/prakashkumar/Desktop/MiniGit/build /Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles/minigit.dir/DependInfo.cmake "--color=$(COLOR)" minigit
 .PHONY : CMakeFiles/minigit.dir/depend
 

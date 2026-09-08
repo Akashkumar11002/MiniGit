@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/git
+CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/MiniGit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/git/build
+CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/MiniGit/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/minigit.dir/clean
 CMakeFiles/minigit.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prakashkumar/Desktop/git/build/CMakeFiles --progress-num=1,2 "Built target minigit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target minigit"
 .PHONY : CMakeFiles/minigit.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minigit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/git/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/minigit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/git/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles 0
 .PHONY : CMakeFiles/minigit.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ minigit: CMakeFiles/minigit.dir/rule
 # codegen rule for target.
 CMakeFiles/minigit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prakashkumar/Desktop/git/build/CMakeFiles --progress-num=1,2 "Finished codegen for target minigit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target minigit"
 .PHONY : CMakeFiles/minigit.dir/codegen
 
 # clean rule for target.

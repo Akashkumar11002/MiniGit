@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/git
+CMAKE_SOURCE_DIR = /Users/prakashkumar/Desktop/MiniGit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/git/build
+CMAKE_BINARY_DIR = /Users/prakashkumar/Desktop/MiniGit/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/git/build/CMakeFiles /Users/prakashkumar/Desktop/git/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles /Users/prakashkumar/Desktop/MiniGit/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/git/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prakashkumar/Desktop/MiniGit/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,78 @@ minigit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/build
 .PHONY : minigit/fast
 
+src/ObjectStore.o: src/ObjectStore.cpp.o
+.PHONY : src/ObjectStore.o
+
+# target to build an object file
+src/ObjectStore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/ObjectStore.cpp.o
+.PHONY : src/ObjectStore.cpp.o
+
+src/ObjectStore.i: src/ObjectStore.cpp.i
+.PHONY : src/ObjectStore.i
+
+# target to preprocess a source file
+src/ObjectStore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/ObjectStore.cpp.i
+.PHONY : src/ObjectStore.cpp.i
+
+src/ObjectStore.s: src/ObjectStore.cpp.s
+.PHONY : src/ObjectStore.s
+
+# target to generate assembly for a file
+src/ObjectStore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/ObjectStore.cpp.s
+.PHONY : src/ObjectStore.cpp.s
+
+src/Repository.o: src/Repository.cpp.o
+.PHONY : src/Repository.o
+
+# target to build an object file
+src/Repository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Repository.cpp.o
+.PHONY : src/Repository.cpp.o
+
+src/Repository.i: src/Repository.cpp.i
+.PHONY : src/Repository.i
+
+# target to preprocess a source file
+src/Repository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Repository.cpp.i
+.PHONY : src/Repository.cpp.i
+
+src/Repository.s: src/Repository.cpp.s
+.PHONY : src/Repository.s
+
+# target to generate assembly for a file
+src/Repository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Repository.cpp.s
+.PHONY : src/Repository.cpp.s
+
+src/Staging.o: src/Staging.cpp.o
+.PHONY : src/Staging.o
+
+# target to build an object file
+src/Staging.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Staging.cpp.o
+.PHONY : src/Staging.cpp.o
+
+src/Staging.i: src/Staging.cpp.i
+.PHONY : src/Staging.i
+
+# target to preprocess a source file
+src/Staging.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Staging.cpp.i
+.PHONY : src/Staging.cpp.i
+
+src/Staging.s: src/Staging.cpp.s
+.PHONY : src/Staging.s
+
+# target to generate assembly for a file
+src/Staging.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minigit.dir/build.make CMakeFiles/minigit.dir/src/Staging.cpp.s
+.PHONY : src/Staging.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... minigit"
+	@echo "... src/ObjectStore.o"
+	@echo "... src/ObjectStore.i"
+	@echo "... src/ObjectStore.s"
+	@echo "... src/Repository.o"
+	@echo "... src/Repository.i"
+	@echo "... src/Repository.s"
+	@echo "... src/Staging.o"
+	@echo "... src/Staging.i"
+	@echo "... src/Staging.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

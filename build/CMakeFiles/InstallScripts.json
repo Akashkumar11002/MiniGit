@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/prakashkumar/Desktop/git/build/cmake_install.cmake"
+		"/Users/prakashkumar/Desktop/MiniGit/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
