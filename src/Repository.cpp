@@ -6,6 +6,7 @@
 #include <map>
 #include <filesystem>
 #include <vector>
+#include <ctime>
 
 
 namespace fs = std::filesystem;
@@ -95,7 +96,45 @@ void Repository::status() {
 }
 
 void Repository::commit(const std::string& message) {
-    std::cout << "commit called with message: " << message << " (not implemented yet)\n";
+    const std::string STAGING_INDEX = ".minigit/staging/index";
+    const std::string COMMITS_DIR = ".minigit/commits";
+    const std::string HEAD_FILE = ".minigit/HEAD";
+
+    std::ifstream indexIn(STAGING_INDEX);
+    std::stringstream stagedContent;
+    stagedContent << indexIn.rdbuf();
+    indexIn.close();
+
+    if (stagedContent.str().empty()) {
+        std::cout << "Nothing to commit. Use 'minigit add <file>' first.\n";
+        return;
+    }
+
+    std::time_t now = std::time(nullptr);
+    std::string timestampStr = std::ctime(&now);
+    if (!timestampStr.empty() && timestampStr.back() == '\n')
+        timestampStr.pop_back();
+
+    std::string commitInput = stagedContent.str() + timestampStr + message;
+    std::string commitId = ObjectStore::hashContent(commitInput);
+
+    std::ofstream commitOut(COMMITS_DIR + "/" + commitId);
+    commitOut << "commit " << commitId << "\n";
+    commitOut << "message " << message << "\n";
+    commitOut << "timestamp " << timestampStr << "\n";
+    commitOut << "files\n";
+    commitOut << stagedContent.str();
+    commitOut.close();
+
+    std::ofstream headOut(HEAD_FILE, std::ios::trunc);
+    headOut << commitId << "\n";
+    headOut.close();
+
+    std::ofstream clearIndex(STAGING_INDEX, std::ios::trunc);
+    clearIndex.close();
+
+    std::cout << "Committed as " << commitId << "\n";
+    std::cout << message << "\n";
 }
 
 void Repository::log() {
