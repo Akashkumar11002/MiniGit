@@ -7,6 +7,8 @@
 #include <filesystem>
 #include <vector>
 #include <ctime>
+#include <algorithm>
+
 
 
 namespace fs = std::filesystem;
@@ -138,5 +140,37 @@ void Repository::commit(const std::string& message) {
 }
 
 void Repository::log() {
-    std::cout << "log called (not implemented yet)\n";
+    const std::string COMMITS_DIR = ".minigit/commits";
+
+    if (!fs::exists(COMMITS_DIR) || fs::is_empty(COMMITS_DIR)) {
+        std::cout << "No commits yet.\n";
+        return;
+    }
+
+    // Collect all commit files along with their last-modified time
+    std::vector<std::pair<fs::file_time_type, std::string>> commitFiles;
+    for (const auto& entry : fs::directory_iterator(COMMITS_DIR)) {
+        if (entry.is_regular_file()) {
+            commitFiles.push_back({entry.last_write_time(), entry.path().string()});
+        }
+    }
+
+    // Sort newest first
+    std::sort(commitFiles.begin(), commitFiles.end(),
+              [](const auto& a, const auto& b) { return a.first > b.first; });
+
+    // Print each commit's details
+    for (const auto& [time, path] : commitFiles) {
+        std::ifstream in(path);
+        std::string line;
+        std::cout << "----------------------------------\n";
+        while (std::getline(in, line)) {
+            if (line.rfind("commit ", 0) == 0 ||
+                line.rfind("message ", 0) == 0 ||
+                line.rfind("timestamp ", 0) == 0) {
+                std::cout << line << "\n";
+            }
+        }
+    }
+    std::cout << "----------------------------------\n";
 }
